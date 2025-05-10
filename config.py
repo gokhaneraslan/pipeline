@@ -29,15 +29,15 @@ OLLAMA_CLIENT_TIMEOUT: int = int(os.getenv("OLLAMA_CLIENT_TIMEOUT", "120"))
 
 LLM_MODELS: Dict[str, Dict[str, str]] = {
     "groq": {
-        "default": "meta-llama/llama-4-maverick-17b-128e-instruct",
-        "query_generation": "meta-llama/llama-4-maverick-17b-128e-instruct",
-        "query_evaluation": "meta-llama/llama-4-maverick-17b-128e-instruct", 
-        "results_filtering": "meta-llama/llama-4-maverick-17b-128e-instruct", 
-        "relevance_scoring": "meta-llama/llama-4-maverick-17b-128e-instruct",
-        "focus_scoring": "meta-llama/llama-4-maverick-17b-128e-instruct",   
-        "content_extraction": "meta-llama/llama-4-maverick-17b-128e-instruct", 
-        "qa_generation": "meta-llama/llama-4-maverick-17b-128e-instruct",
-        "dataset_refinement": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "default": "llama-3.3-70b-versatile",
+        "query_generation": "llama-3.3-70b-versatile",
+        "query_evaluation": "llama-3.3-70b-versatile", 
+        "results_filtering": "llama-3.3-70b-versatile", 
+        "relevance_scoring": "llama-3.3-70b-versatile",
+        "focus_scoring": "llama-3.3-70b-versatile",   
+        "content_extraction": "llama-3.3-70b-versatile", 
+        "qa_generation": "llama-3.3-70b-versatile",
+        "dataset_refinement": "llama-3.3-70b-versatile",
     },
     "mistral": {
         "default": "mistral-small-latest",
@@ -97,7 +97,7 @@ DATASET_OUTPUT_FILENAME_BASE: str = "qna_dataset"
 
 # --- Processing Configuration ---
 # Stage 1: Query Generation
-TOPIC_FOR_PROCESSING: str = os.getenv("TOPIC_FOR_PROCESSING", "Technical Analysis for cryptocurrency")
+TOPIC_FOR_PROCESSING: str = os.getenv("TOPIC_FOR_PROCESSING", "")
 NUM_QUERIES_TO_SELECT_AFTER_GENERATION: int = int(os.getenv("NUM_QUERIES_TO_SELECT_AFTER_GENERATION", "5"))
 
 # Stage 3: Initial Filtering (Relevance) using SentenceSplitter
