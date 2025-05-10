@@ -1,0 +1,23 @@
+pycountry
+googlesearch-python
+crawl4ai
+#playwright install
+nest_asyncio
+trafilatura
+beautifulsoup4
+pypdf
+PyMuPDF
+httpx
+unstructured
+unstructured[pdf]
+unstructured[local-inference]
+unstructured[poppler-utils]
+unstructured[tesseract]
+llama-index-core
+llama-index-embeddings-ollama
+llama-index-embeddings-huggingface
+sentence-transformers
+ollama
+mistralai
+groq
+pandas
