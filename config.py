@@ -97,7 +97,7 @@ DATASET_OUTPUT_FILENAME_BASE: str = "qna_dataset"
 
 # --- Processing Configuration ---
 # Stage 1: Query Generation
-TOPIC_FOR_PROCESSING: str = os.getenv("TOPIC_FOR_PROCESSING", "")
+TOPIC_FOR_PROCESSING: str = os.getenv("TOPIC_FOR_PROCESSING", "quantum")
 NUM_QUERIES_TO_SELECT_AFTER_GENERATION: int = int(os.getenv("NUM_QUERIES_TO_SELECT_AFTER_GENERATION", "5"))
 
 # Stage 3: Initial Filtering (Relevance) using SentenceSplitter
