@@ -137,8 +137,8 @@ The pipeline is divided into several distinct stages, each performing a specific
 
 1.  **Clone the repository:**
     ```bash
-    git clone <repository_url>
-    cd <repository_name>
+    git clone https://github.com/gokhaneraslan/pipeline.git
+    cd pipeline
     ```
 
 2.  **Create and activate a virtual environment (recommended):**
