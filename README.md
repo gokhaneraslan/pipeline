@@ -137,8 +137,8 @@ The pipeline is divided into several distinct stages, each performing a specific
 
 1.  **Clone the repository:**
     ```bash
-    git clone <repository_url>
-    cd <repository_name>
+    git clone https://github.com/gokhaneraslan/pipeline.git
+    cd pipeline
     ```
 
 2.  **Create and activate a virtual environment (recommended):**
@@ -232,9 +232,7 @@ After installation and configuration:
 4.  Outputs from each stage will be saved in subdirectories within `pipeline_output/` (or your configured `BASE_OUTPUT_DIR`). The final refined dataset will typically be in `pipeline_output/refined_dataset/`.
 
 ## Directory Structure
-Use code with caution.
-Markdown
-.
+
 ├── core/ # Core utilities and prompt definitions
 │ ├── llm_client.py # LLM client initialization
 │ ├── prompts.py # LLM prompt templates
